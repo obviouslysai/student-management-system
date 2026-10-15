@@ -1,0 +1,32 @@
+/* sidebar.css */
+.sidebar {
+  width: 240px;
+  background-color: #2c3e50; /* A modern, dark blue */
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  transition: width 0.3s ease;
+  flex-shrink: 0; /* Prevents the sidebar from shrinking */
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  text-decoration: none;
+  color: #ecf0f1; /* A light, off-white color for text */
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-left: 4px solid transparent; /* For the active indicator */
+}
+
+.sidebar-link:hover {
+  background-color: #34495e; /* A slightly lighter dark blue for hover */
+}
+
+.sidebar-link.active {
+  background-color: #34495e;
+  color: #ffffff;
+  border-left: 4px solid #3498db; /* A bright blue accent for the active link */
+}

@@ -1,0 +1,13 @@
+/* src/App.css */
+
+.app-container {
+  display: flex;
+}
+
+.content-container {
+  flex-grow: 1;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+  background-color: #f0f2f5;
+  padding: 2rem;
+}
